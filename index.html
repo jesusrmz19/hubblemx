@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- RESPONSIVE -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <!-- LINK TO THE CSS FILE -->
+        <link rel="stylesheet" href="style2.css">
+        <!-- CSS ICONS -->
+        <link rel="stylesheet" href="css/all.css">
+        <!-- TITLE -->
+        <link rel="icon" href="/images/logo-hubble.png" />
+        <title>Hubble</title>
+    </head>
+    <body>
+        <div class="se-pre-con active">
+            <img src="images/logo-loadingpage.png" alt="pulsing logo">
+        </div>
+        <script>
+                setTimeout(function() {
+                    document.querySelector('.se-pre-con').classList.remove('active');
+                }, 3000);
+        </script>
+        <header class="header-nav" id="header">
+            <nav class="nav active" id="main-nav">
+                <a href="javascript:void(0)" id="toggleNav" class="toggle-Nav"><i class="fas fa-bars"></i></a>
+                <ul id="nav-menu" role="menu" class="nav-flex">
+                    <li role="menuitem"><a id="toNosotros" data-sec="01" data-rad="1" data-curBot="100" class="menuitem nosotros">NOSOTROS</a></li>
+                    <li role="menuitem"><a id="toVender" data-sec="03" data-rad="2" data-curBot="200" class="menuitem">QUIERO VENDER</a></li>
+                    <li role="menuitem"><a id="toComprar"  data-sec="05" data-rad="3" data-curBot="300" class="menuitem">QUIERO COMPRAR</a></li>
+                    <li role="menuitem"><a id="toPlanes" data-sec="04"  data-rad="4 "data-curBot="400" class="menuitem">PLANES</a></li>
+                    <li role="menuitem"><a id="toContacto" data-sec="07" data-rad="5" data-curBot="600" class="menuitem">CONTACTO</a></li>
+                    <li role="menuitem" class="props">
+                        <a  class="menuitem" href="http://hubble.easybroker.com/" target="_blank">
+                            <span id="a">VER PROPIEDADES</span><span id="b">POWERED BY EASY BROKER</span>
+                        </a>
+                    </li>
+                    <li role="menuitem" class="social"><a href="https://www.facebook.com/hubble.com.mx/" target="_blank" aria-label="Go to our Facebook Page!"><i class="fab fa-facebook-f"></i></a></li>
+                    <li role="menuitem" class="social"><a href="https://www.twitter.com" target="_blank" aria-label="Go to our Twitter Page!"><i class="fab fa-twitter"></i></a></li>
+                    <li role="menuitem" class="social"><a href="https://www.instagram.com/hubble.realestate/" target="_blank" aria-label="Go to our Instagram Page!"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="side-nav active" id="side-nav">
+                <ul role="menu" class="side-nav-flex">
+                    <li role="menuitemradio" class="hide-radio active" id="radio-1"><span class="test"></span><a class=""><span class="a">01</span><span class="b">&#12295;</span></a></li>
+                    <li role="menuitemradio" class="hide-radio " id="radio-2"><a  class=""><span class="a">02</span><span class="b">&#12295;</span></a></a></li>
+                    <li role="menuitemradio" class="hide-radio " id="radio-3"><a class=""><span class="a">03</span><span class="b">&#12295;</span></a></a></li>
+                    <li role="menuitemradio" class="hide-radio " id="radio-4"><a class=""><span class="a">04</span><span class="b">&#12295;</span></a></a></li>
+                    <li role="menuitemradio" class="hide-radio " id="radio-5"><a class=""><span class="a">05</span><span class="b">&#12295;</span></a></a></li>
+                    <li class="btn-down"><a id="btn-down"><img src="/images/down-arrow.png" alt="down arrow button for side-nav"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="wrapper">
+            <img class="logo" src="/images/logo-hubble2.png" alt="logo in navbar">
+            <div class="portales-wrapper">
+                <button class="portales-btn"><span>LOS MEJORES PORTALES</span></button>
+                <div class="portales-logos">
+                    <img src="/images/Layer 47.png" alt="homesgofast.com logo">
+                    <img src="/images/Layer 42.png" alt="mercadolibre.com logo">
+                    <img src="/images/Layer 43.png" alt="metroscubicos.com logo">
+                    <img src="/images/Layer 41.png" alt="inmuebles24 logo">
+                    <img src="/images/Layer 44.png" alt="propiedades.com logo">
+                    <img src="/images/Layer 45.png" alt="smartlending.com logo">
+                    <img src="/images/Layer 46.png" alt="vivaanuncios.com logo">
+                </div>
+            </div>
+            <div class="sections">
+            <section class="video sec-0" data-index="0" data-rad="v">
+                <video id="video" class="video-background" muted plays-inline>
+                    <source src="/images/video.mp4" type="video/mp4">
+                </video>
+                <div class="videodiv">
+                    <p class="wht-txt">SOMOS</br>
+                                LA NUEVA</br>
+                                GENERACIÓN</br>
+                                INMOBILIARIA <span class="org-txt">/</span></br>
+                                <a class="wannahubble" onclick="descubreMas()">WANNA HUBBLE?</a>
+                    </p>
+                    <a class="small" ><img src="images/down-arrow.png" onclick="descubreMas()" alt="down arrow button for first page"></a>
+                </div>
+            </section>
+            <section class="first sec-1" data-index="1" data-rad="1">
+                <p class="of-txt ">HUBBLE WHAT?</p>
+                <p class="wf-txt ">NOSOTROS</p>
+                <p class="wf-ptxt">HUBBLE el híbrido entre una super agencia de marketing digital y una inmobiliaria tradicional.
+                     La primer agencia inmobiliaria de innovación digital. Un equipo formado por todo tipo de mentes y personalidades
+                     que apoyados en la ultima tecnología esta listo para cambiar y profesionalizar una compra venta inmobiliaria.
+                      En HUBBLE diseñamos, producimos y ejecutamos soluciones on/off para la venta de inmuebles.
+                      Nuestros servicios están disponibles para propietarios, brokers y desarrolladores que intentan diferenciarse
+                      en un mercado hipercompetitivo. Con HUBBLE tu decides si quieres ahorrar tiempo o dinero. Suena loco no?
+                      Pruébanos y te darás cuenta que funciona como relojito.
+                </p>
+            </section>
+            <section class="third sec-2" data-index="2" data-rad="2">
+                    <p class="ot-txt">HUBBLE WHAT?</p>
+                    <p class="wt-txt">QUIERO VENDER</p>
+                    <p class="wt-ptxt ">Con HUBBLE tu decides que necesitas para vender tu casa. Diseñamos los mejores planes pensando
+                        en tus necesidades. Puedes contratar desde fotografías profesionales, anuncios en los mejores portales hasta tener a tu
+                        servicio un estudio completo de marketing digital y el poder de una red inmobiliaria profesional. Lo mejor es que tu decides
+                        que necesitas y si pagas antes o al finalizar la venta.
+                    </p>
+                    <a class="valuacion" target="_blank">AGENDA UNA VALUACIÓN GRATUITA</a>
+            </section>
+            <section class="fifth sec-3" data-index="3" data-rad="3" id="Comprar">
+                <p class="ofive-txt ">HUBBLE WHAT?</p>
+                <p class="wfive-txt ">QUIERO COMPRAR</p>
+                <p class="wfive-ptxt  ">HUBBLE es la manera más confiable de comprar un inmueble. Todas nuestras propiedades pasan por una
+                    certificación que las hace listas para la venta.</br>Recorre de manera virtual nuestras propiedades, escoge las que te gustan
+                    y agenda un real estate tour.</br></br>Conoce nuestras propiedades aquí:
+                </p>
+                <a class="propiedades" href="http://hubble.easybroker.com/" target="_blank">VER PROPIEDADES</a>
+            </section>
+            <section class="four sec-4" data-index="4" data-rad="4">
+                <div class="four-plan plan-1 active">
+                    <div class="four-half four-half-left four-txt four-plan1">
+                        <div>
+                            <p class="wht-txt">PLAN</p>
+                            <p class="wht-txt">PAGA ANTES,</p>
+                            <p class="wht-txt">VENDE</p>
+                            <p class="wht-txt">TU MISMO</p>
+                            <p class="wht-txt small" >DESDE $7,000 PESOS + IVA</p>
+                        </div>
+                    </div>
+                    <div class="four-half four-half-right icon-wrapper">
+                        <div class="icon-wrap">
+                            <div>
+                                <img src="icons/hand.png" alt="hand icon">
+                                <p>6 MESES</br>SIN INTERESES</p>
+                            </div>
+                            <div>
+                                <img src="icons/loupe.png" alt="loupe icon">
+                                <p>VALUACION</br>GRATUITA</p>
+                            </div>
+                            <div>
+                                <img src="icons/camera.png" alt="camera icon">
+                                <p>FOTOS</br>PROFESIONALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/angle.png" alt="angle icon">
+                                <p>RECORRIDO</br>VIRTUAL 360</p>
+                            </div>
+                            <div>
+                                <img src="icons/brochure.png" alt="brochure icon">
+                                <p>BROCHURE DE</br>VENTA DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/social-media.png" alt="social-media icon">
+                                <p>CAMPAÑAS PARA</br>REDES Y PORTALES</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="pdf" alt="PDF" href="docs/PLAN PAGA ANTES VENDE TU MISMO.pdf" download="PLAN PAGA ANTES VENDE TU MISMO">DESCARGAR PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four-plan plan-2">
+                    <div class="four-half four-half-left icon-wrapper">
+                        <div class="icon-wrap">
+                            <div>
+                                <img src="icons/angle.png" alt="angle logo">
+                                <p>RECORRIDO</br>VIRTUAL 360</p>
+                            </div>
+                            <div>
+                                <img src="icons/brochure.png" alt="brochure logo">
+                                <p>BROCHURE</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/website.png" alt="website logo">
+                                <p>LOS MEJORES</br>PORTALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/social-media.png" alt="social-media logo">
+                                <p>REDES</br>SOCIALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/camera.png" alt="camera logo">
+                                <p>FOTOS</br>PROFESIONALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/loupe.png" alt="loupe logo">
+                                <p>VALUACION</br>GRATUITA</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="pdf" alt="PDF" href="docs/PLAN UNA CUOTA FIJA SIN COMISIONES.pdf" download="PLAN UNA CUOTA FIJA SIN COMISIONES">DESCARGAR PDF</a>
+                        </div>
+                    </div>
+                    <div class="four-half four-half-right four-txt four-plan2">
+                        <div>
+                            <p class="wht-txt">PLAN</p>
+                            <p class="wht-txt">UNA CUOTA</p>
+                            <p class="wht-txt">FIJA, SIN</p>
+                            <p class="wht-txt">COMISIONES</p>
+                            <p class="wht-txt small" >$83,000 PESOS + IVA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="four-plan plan-3">
+                    <div class="four-half four-half-left four-txt four-plan3">
+                        <div>
+                            <p class="wht-txt">PLAN</p>
+                            <p class="wht-txt">REAL</p>
+                            <p class="wht-txt">ESTATE</p>
+                            <p class="wht-txt">CLÁSICO</p>
+                            <p class="wht-txt small" >6% + IVA DE COMISIÓN SOBRE VENTA</p>
+                        </div>
+                    </div>
+                    <div class="four-half four-half-right icon-wrapper">
+                        <div class="icon-wrap2">
+                            <div>
+                                <img src="icons/bolsa.png" alt="bolsa logo">
+                                <p>BOLSA</br>INMOBILIARIA</p>
+                            </div>
+                            <div>
+                                <img src="icons/broker.png" alt="broker logo">
+                                <p>BROKER</br>24/7</p>
+                            </div>
+                            <div>
+                                <img src="icons/video.png" alt="video-camera logo">
+                                <p>VIDEO</p>
+                            </div>
+                            <div>
+                                <img src="icons/camera.png" alt="camera logo">
+                                <p>FOTOS</br>PROFESIONALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/brochure.png" alt="brochure logo">
+                                <p>BROCHURE</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/printer.png" alt="printer logo">
+                                <p>MATERIALES</br>IMPRESOS</p>
+                            </div>
+                            <div>
+                                <img src="icons/website.png" alt="website logo">
+                                <p>LOS MEJORES</br>PORTALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/digital.png" alt="digital-strategy logo">
+                                <p>ESTRATEGIA</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/loupe.png" alt="loupe logo">
+                                <p>VALUACION</br>GRATUITA</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="pdf" alt="PDF" href="docs/PLAN REAL ESTATE CLASICO.pdf" download="PLAN REAL ESTATE CLASICO">DESCARGAR PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="four-plan plan-4">
+                    <div class="four-half four-half-left icon-wrapper">
+                        <div class="icon-wrap2">
+                            <div>
+                                <img src="icons/bolsa.png" alt="bolsa logo">
+                                <p>BOLSA</br>INMOBILIARIA</p>
+                            </div>
+                            <div>
+                                <img src="icons/broker.png" alt="broker logo">
+                                <p>BROKER</br>24/7</p>
+                            </div>
+                            <div>
+                                <img src="icons/angle.png" alt="angle logo">
+                                <p>RECORRIDO</br>VIRTUAL 360</p>
+                            </div>
+                            <div>
+                                <img src="icons/video.png" alt="video-camera logo">
+                                <p>VIDEO</br>HD</p>
+                            </div>
+                            <div>
+                                <img src="icons/camera-star.png" alt="camera-premium logo">
+                                <p>FOTOS</br>PREMIUM</p>
+                            </div>
+                            <div>
+                                <img src="icons/printer.png" alt="printer logo">
+                                <p>IMPRESOS O</br>REVISTAS</p>
+                            </div>
+                            <div>
+                                <img src="icons/website-star.png" alt="website-premium logo">
+                                <p>DESTACADO</br>EN PORTALES</p>
+                            </div>
+                            <div>
+                                <img src="icons/digital.png" alt="digital-strategy logo">
+                                <p>ESTRATEGIA</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/valuacion.png" alt="valuation logo">
+                                <p>VALUACION</br>GRATUITA</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="pdf" alt="PDF" href="docs/PLAN REAL ESTATE PREMIUM.pdf" download="PLAN REAL ESTATE PREMIUM">DESCARGAR PDF</a>
+                        </div>
+                    </div>
+                    <div class="four-half four-half-right four-txt four-plan4">
+                        <div>
+                            <p class="wht-txt">PLAN</p>
+                            <p class="wht-txt">HUBBLE</p>
+                            <p class="wht-txt">PREMIUM</p>
+                            <p class="wht-txt small" >8% + IVA DE COMISION SOBRE VENTA</br>
+                            GARANTIA DE VENTA DE 90 DIAS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="four-plan plan-5">
+                    <div class="four-half four-half-left four-txt four-plan5">
+                        <div>
+                            <p class="wht-txt">PLAN</p>
+                            <p class="wht-txt">HUBBLE</p>
+                            <p class="wht-txt">DEVELOPERS</p>
+                            <p class="wht-txt small" >PREVENTAS EXITOSAS</p>
+                        </div>
+                    </div>
+                    <div class="four-half four-half-right icon-wrapper">
+                        <div class="icon-wrap2">
+                            <div>
+                                <img src="icons/research.png" alt="research logo">
+                                <p>ESTRATEGIA E</br>INNOVACIÓN</p>
+                            </div>
+                            <div>
+                                <img src="icons/decorating.png" alt="interiorism logo">
+                                <p>INTERIORISMO</p>
+                            </div>
+                            <div>
+                                <img src="icons/brand.png" alt="brand-identity logo">
+                                <p>IDENTIDAD</br>Y BRANDING</p>
+                            </div>
+                            <div>
+                                <img src="icons/social-media.png" alt="social-media logo">
+                                <p>MARKETING</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/camera-star.png" alt="camera-premium logo">
+                                <p>FOTOS</br>PREMIUM</p>
+                            </div>
+                            <div>
+                                <img src="icons/video.png" alt="video-camera logo">
+                                <p>VIDEO HD</p>
+                            </div>
+                            <div>
+                                <img src="icons/printer.png" alt="printer logo">
+                                <p>MATERIALES</br>IMPRESOS</p>
+                            </div>
+                            <div>
+                                <img src="icons/digital.png" alt="digital-strategy logo">
+                                <p>ESTRATEGIA</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="icons/auction.png" alt="commercialization logo">
+                                <p>COMERCIALIZACIÓN</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="pdf" alt="PDF" href="docs/PLAN HUBBLE DEVELOPERS.pdf" download="PLAN HUBBLE DEVELOPERS" >DESCARGAR PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile plan-1-mob-background">
+                <div class="four-plans-mob-txt">
+                    <p class="wht-txt">PLAN</p>
+                    <p class="wht-txt">PAGA ANTES,</p>
+                    <p class="wht-txt">VENDE</p>
+                    <p class="wht-txt">TU MISMO</p>
+                    <p class="wht-txt small" >DESDE $7,000 PESOS + IVA</p>
+                </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile icon-wrapper">
+                <div class="icon-wrap">
+                    <div>
+                        <img src="images/hand.png">
+                        <p>6 MESES</br>SIN INTERESES</p>
+                    </div>
+                    <div>
+                        <img src="images/loupe.png">
+                        <p>VALUACION</br>GRATUITA</p>
+                    </div>
+                    <div>
+                        <img src="images/camera.png">
+                        <p>FOTOS</br>PROFESIONALES</p>
+                    </div>
+                    <div>
+                        <img src="images/angle.png">
+                        <p>RECORRIDO</br>VIRTUAL 360</p>
+                    </div>
+                    <div>
+                        <img src="images/flyer.png">
+                        <p>BROCHURE DE</br>VENTA DIGITAL</p>
+                    </div>
+                    <div>
+                        <img src="images/seo.png">
+                        <p>CAMPAÑAS PARA</br>REDES Y PORTALES</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="pdf">DESCARGAR PDF</button>
+                </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile plan-2-mob-background">
+                    <div class="four-plans-mob-txt">
+                        <p class="wht-txt">PLAN</p>
+                        <p class="wht-txt">UNA CUOTA</p>
+                        <p class="wht-txt">FIJA, SIN</p>
+                        <p class="wht-txt">COMISIONES</p>
+                        <p class="wht-txt small" >$83,000 PESOS + IVA</p>
+                    </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile icon-wrapper">
+                    <div class="icon-wrap">
+                        <div>
+                            <img src="images/contract.png">
+                            <p>SIN CONTRATO</br>DE EXCLUSIVIDAD</p>
+                        </div>
+                        <div>
+                            <img src="images/flyer.png">
+                            <p>BROCHURE</br>DIGITAL</p>
+                        </div>
+                        <div>
+                            <img src="images/website.png">
+                            <p>LOS MEJORES</br>PORTALES</p>
+                        </div>
+                        <div>
+                            <img src="images/social-media.png">
+                            <p>REDES</br>SOCIALES</p>
+                        </div>
+                        <div>
+                            <img src="images/camera.png">
+                            <p>FOTOS</br>PROFESIONALES</p>
+                        </div>
+                        <div>
+                            <img src="images/valuacion.png">
+                            <p>VALUACION</br>GRATUITA</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="pdf">DESCARGAR PDF</button>
+                    </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile plan-3-mob-background">
+                <div class="four-plans-mob-txt">
+                    <p class="wht-txt">PLAN</p>
+                    <p class="wht-txt">REAL</p>
+                    <p class="wht-txt">ESTATE</p>
+                    <p class="wht-txt">CLASICO</p>
+                    <p class="wht-txt small" >6% + IVA DE COMISION SOBRE VENTA</p>
+                </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile icon-wrapper">
+                    <div class="icon-wrap2">
+                            <div>
+                                <img src="images/bolsa.png">
+                                <p>BOLSA</br>INMOBILIARIA</p>
+                            </div>
+                            <div>
+                                <img src="images/broker.png">
+                                <p>BROKER</br>24/7</p>
+                            </div>
+                            <div>
+                                <img src="images/video.png">
+                                <p>VIDEO</p>
+                            </div>
+                            <div>
+                                <img src="images/printer.png">
+                                <p>IMPRESOS</p>
+                            </div>
+                            <div>
+                                <img src="images/flyer.png">
+                                <p>BROCHURE</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="images/website.png">
+                                <p>LOS MEJORES</br>PORTALES</p>
+                            </div>
+                            <div>
+                                <img src="images/digital.png">
+                                <p>ESTRATEGIA</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="images/camera.png">
+                                <p>FOTOS</br>PROFESIONALES</p>
+                            </div>
+                            <div>
+                                <img src="images/valuacion.png">
+                                <p>VALUACION</br>GRATUITA</p>
+                            </div>
+                        </div>
+                    <div>
+                        <button class="pdf">DESCARGAR PDF</button>
+                    </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile plan-4-mob-background">
+                <div class="four-plans-mob-txt">
+                        <p class="wht-txt">PLAN</p>
+                        <p class="wht-txt">HUBBLE</p>
+                        <p class="wht-txt">PREMIUM</p>
+                        <p class="wht-txt small" >8% + IVA DE COMISION SOBRE VENTA</br>
+                        GARANTIA DE VENTA DE 90 DIAS
+                        </p>
+                </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile icon-wrapper">
+                 <div class="icon-wrap2">
+                            <div>
+                                <img src="images/contract.png">
+                                <p>CONTRATO</p>
+                            </div>
+                            <div>
+                                <img src="images/bolsa.png">
+                                <p>BOLSA INMOBILIARIA</p>
+                            </div>
+                            <div>
+                                <img src="images/broker.png">
+                                <p>BROKER</br>24/7</p>
+                            </div>
+                            <div>
+                                <img src="images/video.png">
+                                <p>VIDEO</br>HD</p>
+                            </div>
+                            <div>
+                                <img src="images/printer.png">
+                                <p>REVISTAS O</br>IMPRESOS</p>
+                            </div>
+                            <div>
+                                <img src="images/website.png">
+                                <p>DESTACADO EN</br>PORTALES</p>
+                            </div>
+                            <div>
+                                <img src="images/digital.png">
+                                <p>ESTRATEGIA</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="images/camera.png">
+                                <p>FOTOS</br>PROFESIONALES</p>
+                            </div>
+                            <div>
+                                <img src="images/valuacion.png">
+                                <p>VALUACION</br>GRATUITA</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="pdf">DESCARGAR PDF</button>
+                        </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile plan-5-mob-background">
+                <div class="four-plans-mob-txt">
+                        <p class="wht-txt">PLAN</p>
+                        <p class="wht-txt">HUBBLE</p>
+                        <p class="wht-txt">DEVELOPERS</p>
+                        <p class="wht-txt small" >PREVENTAS EXITOSAS</p>
+                </div>
+            </section>
+            <section class="four-plans-mob sec-4-mobile icon-wrapper">
+                    <div class="icon-wrap">
+                            <div>
+                                <img src="images/research.png">
+                                <p>ESTRATEGIA E</br>INNOVACIÓN</p>
+                            </div>
+                            <div>
+                                <img src="images/brand.png">
+                                <p>IDENTIDAD Y</br>BRANDING</p>
+                            </div>
+                            <div>
+                                <img src="images/laptop.png">
+                                <p>MARKETING</br>OMNICANAL</p>
+                            </div>
+                            <div>
+                                <img src="images/social-media copy 2.png">
+                                <p>INNOVACIÓN</br>DIGITAL</p>
+                            </div>
+                            <div>
+                                <img src="images/video.png">
+                                <p>PRODUCCIÓN</p>
+                            </div>
+                            <div>
+                                <img src="images/hand.png">
+                                <p>COMERCIALIZACIÓN</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="pdf">DESCARGAR PDF</button>
+                        </div>
+            </section>
+            <section class="six sec-6" data-index="6" data-rad="4">
+               <div class="anagram">
+                    <p class="wht-txt"><span>H</span>ONEST</p>
+                    <p class="wht-txt"><span>U</span>PBEAT</p>
+                    <p class="wht-txt"><span>B</span>OLD</p>
+                    <p class="wht-txt"><span>B</span>OLD <span class="small">DID WE MENTIONED BOLDNESS?</span></p>
+                    <p class="wht-txt"><span>L</span>OYAL</p>
+                    <p class="wht-txt"><span>E</span>FFECTIVE</p>
+               </div>
+               <div class="anagram2">
+                   <p class="wht-txt small">THE NEXT GENERATION IN REAL STATE</p>
+               </div>
+            </section>
+            <section class="seven sec-7" id="contact" data-index="7" data-rad="5">
+                <div class="seven-top">
+                    <p class="oseven-txt">WANNA HUBBLE?</p>
+                    <p class="wseven-txt ">CONTACT US</p>
+                </div>
+                <div class="seven-left ">
+                    <p class="wseven-ptxt">Si te interesaría recibir más información acerca de HUBBLE no dudes en dejarnos un mensaje y te
+                        contactaremos a la brevedad posible.
+                    </p>
+                    <form class="form-wrapper">
+                        <label for="nombre-input">Nombre</label>
+                        <input type="text" name="nombre" id="nombre-input" >
+                        <label for="telefono-input">Telefono</label>
+                        <input type="text" name="telefono" id="telefono-input" >
+                        <label for="mensaje-input">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje-input" ></textarea>
+                        <input type="submit" value="ENVIAR">
+                    </form>
+                </div>
+                <div class="seven-right">
+                    <div class="seven-right-grid">
+                        <a class="location-icon" href="#" target="_blank" aria-label="Check our location!"><i class="fab fas fa-map-marker-alt"></i></a>
+                        <p class="wht-ptxt location-txt">Calle Ejemplo #123</br>
+                                            Col. Ejemplar </br>
+                                            Guadalajara, Jalisco </br>
+                                            C.P. 00000
+                        </p>
+                        <a class="email-icon" href="#" target="_blank" aria-label="Send us an email!"><i class="fab far fa-envelope"></i></a>
+                        <p class="wht-ptxt email-txt">info@hubble.com</p>
+                        <a class="whats-icon" href="#" target="_blank" aria-label="Send us a whatsapp!"><i class="fab fa-whatsapp"></i></a>
+                        <p class="wht-ptxt whats-txt">(33)3333-333</p>
+                        <div class="socials-icons">
+                            <a href="https://www.facebook.com/hubble.com.mx/" target="_blank" aria-label="Go to our Facebook Page!"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/hubble.com.mx/" target="_blank" aria-label="Go to our Twitter Page!""><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/hubble.realestate/" target="_blank" aria-label="Go to our Instagram Page!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p style="font-family: 'Nunito-Ext'" class="socials-txt">GO FOLLOW US ON OUR SOCIALS!</p>
+                    </div>
+                </div>
+            </section>
+        </div><!--
+        <footer class="footer">
+            <p class="org-txt">ANUNCIAMOS TU PROPIEDAD EN LOS MEJORES LUGARES:</p>
+            <div class="footer-flex">
+                <img src="/images/Layer 47.png">
+                <img src="/images/Layer 42.png">
+                <img src="/images/Layer 43.png">
+                <img src="/images/Layer 41.png">
+                <img src="/images/Layer 44.png">
+                <img src="/images/Layer 45.png">
+                <img src="/images/Layer 46.png">
+            </div>
+        </footer>-->
+        <div aria-label="navigation menu for small sizes" id="myMenu" class="overlay">
+                <div class="overlay-content" >
+                    <a data-sec="01" data-curBot="100" class="menuitem nosotros">NOSOTROS</a>
+                    <a data-sec="03" data-curBot="200" class="menuitem">QUIERO VENDER</a>
+                    <a data-sec="05" data-curBot="300" class="menuitem">QUIERO COMPRAR</a>
+                    <a data-sec="04" data-curBot="400" class="menuitem">PLANES</a>
+                    <a data-sec="07" data-curBot="1500" class="menuitem">CONTACTO</a>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script type="text/javascript" src="js/main.js"></script>
+</html>
