@@ -382,6 +382,8 @@ p {
     align-items: center;
 }
 .portales-btn {
+    padding: 0;
+    margin: 0;
     color: #ff2c11;
     font-family: "Nunito-Black";
     font-size: 12px;
@@ -395,9 +397,6 @@ p {
     cursor: pointer;
     text-decoration: none;
     transition: all ease 0.3s;
-    display: flex;
-    align-self: center;
-    justify-content: center;
 }
 .portales-btn:hover {
     color: white;
@@ -410,9 +409,12 @@ p {
     outline: none;
 }
 .portales-btn span {
-    display: inline-block;
-    white-space: nowrap;
-    transform: rotate(-90deg);
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 50px;
+    width: 230px;
+    transform: rotate(-90deg) translateY(-75px);
 }
 .portales-logos {
     border-left: 3px solid #ff2c11;
@@ -1024,6 +1026,9 @@ input[type=submit]:hover {
     line-height: 1;
 }
 @media screen and (max-width: 1280px) {
+    .nav {
+        padding: 0 1em;
+    }
     .nav .logo img {
         height: 85%;
     }
